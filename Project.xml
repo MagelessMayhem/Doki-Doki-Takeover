@@ -173,5 +173,6 @@
 	<haxedef name="FEATURE_OBS" if="windows" />
 	<!-- Defines whether Game Jolt integration is enabled. -->
 	<haxedef name="FEATURE_GAMEJOLT" unless="html5"/>
+	<haxedef name="hscriptPos" if="hscript" />
 
 </project>
