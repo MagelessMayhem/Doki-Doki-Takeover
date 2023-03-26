@@ -2652,23 +2652,23 @@ class PlayState extends MusicBeatState
 	override function destroy()
 	{
 		// Clean up VideoSprite
-		for (video in members)
-		{
-			var video:Dynamic = video;
-			var video:VideoSprite = video;
+		//for (video in members)
+		//{
+		//	var video:Dynamic = video;
+		//	var video:VideoSprite = video;
 
-			if (video != null && video is VideoSprite)
-			{
-				video.bitmap.dispose();
-				video.destroy();
-				video = null;
-			}
-		}
+		//	if (video != null && video is VideoSprite)
+		//	{
+		//		video.bitmap.dispose();
+		//		video.destroy();
+		//		video = null;
+		//	}
+		//}
 
-		FlxG.stage.removeEventListener(KeyboardEvent.KEY_DOWN, onKeyPress);
-		FlxG.stage.removeEventListener(KeyboardEvent.KEY_UP, onKeyRelease);
-		FlxG.mouse.visible = true;
-		super.destroy();
+		//FlxG.stage.removeEventListener(KeyboardEvent.KEY_DOWN, onKeyPress);
+		//FlxG.stage.removeEventListener(KeyboardEvent.KEY_UP, onKeyRelease);
+		//FlxG.mouse.visible = true;
+		//super.destroy();
 	}
 
 	function customstart():Void
